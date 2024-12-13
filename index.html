@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LakView - Patch Notes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(-45deg, #1a2a6c, #2c3e50, #2a4858);
+            background-size: 400% 400%;
+            animation: gradient 20s ease infinite;
+            color: #ffffff;
+            min-height: 100vh;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 4rem;
+            animation: fadeDown 1.5s ease-out;
+        }
+
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 1rem;
+            color: #ffffff;
+            opacity: 0.9;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #a8c6fa;
+            opacity: 0.8;
+            margin-bottom: 2rem;
+        }
+
+        .patch-note {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            animation: fadeIn 1s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .patch-note:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .patch-date {
+            color: #a8c6fa;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            opacity: 0.8;
+        }
+
+        .patch-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .patch-content {
+            line-height: 1.6;
+            color: #e0e0e0;
+            opacity: 0.9;
+        }
+
+        .soft-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo soft-shadow">LakView</div>
+            <div class="subtitle">Notes de mise à jour</div>
+        </header>
+
+        <div class="patch-note">
+            <div class="patch-date">13 Décembre 2024</div>
+            <h2 class="patch-title">Mise à jour du service EMS</h2>
+            <div class="patch-content">
+                <p>Amélioration majeure du service médical :</p>
+                <br>
+                <p>Les EMS peuvent désormais exercer leur profession de manière optimale grâce à l'ajout d'une gamme complète de bandages nécessaires à leurs interventions. Cette mise à jour permet une meilleure prise en charge des patients et une expérience de jeu plus réaliste pour nos services de secours.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
